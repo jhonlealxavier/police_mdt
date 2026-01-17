@@ -1,0 +1,86 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+@theme {
+  /* Cores personalizadas */
+  --color-primary: #ff204e;
+  --color-primary-foreground: #ffffff;
+
+  --color-background: #0a0a0a;
+  --color-foreground: #ffffff;
+
+  --color-card: #1a1a1a;
+  --color-card-foreground: #ffffff;
+
+  --color-popover: #1a1a1a;
+  --color-popover-foreground: #ffffff;
+
+  --color-secondary: #2a2a2a;
+  --color-secondary-foreground: #ffffff;
+
+  --color-muted: #2a2a2a;
+  --color-muted-foreground: #9ca3af;
+
+  --color-accent: #2a2a2a;
+  --color-accent-foreground: #ffffff;
+
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+
+  --color-border: #2a2a2a;
+  --color-input: #2a2a2a;
+  --color-ring: #ff2d75;
+
+  --color-success: #10b981;
+}
+
+:root {
+  /* Dimensões do tablet - reduzidas para ~70% */
+  --tablet-width: 80%;
+  --tablet-height: 90%;
+
+  /* Sidebar */
+  --sidebar-width: 96px;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    margin: 0;
+    padding: 0;
+    font-family:
+      "Montserrat",
+      system-ui,
+      -apple-system,
+      sans-serif;
+    overflow: hidden;
+  }
+
+  #root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4285;
+}
