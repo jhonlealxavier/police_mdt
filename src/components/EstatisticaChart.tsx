@@ -32,12 +32,12 @@ const chartConfig = {
 
 export function EstatisticasChart() {
   return (
-    <Card className="bg-card border-border border rounded-lg">
+    <Card className="bg-card border-border border rounded-lg ">
       <CardHeader>
         <CardTitle>Gráfico de Estatísticas</CardTitle>
       </CardHeader>
 
-      <CardContent className="h-[260px]">
+      <CardContent className="h-[180px] p-4">
         <ChartContainer config={chartConfig} className="h-full w-full">
           <BarChart data={data}>
             <CartesianGrid vertical={false} strokeDasharray="3 3" />

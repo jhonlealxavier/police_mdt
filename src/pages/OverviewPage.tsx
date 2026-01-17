@@ -1,4 +1,4 @@
-import { CirclePlus, Home, Trash, Trash2 } from "lucide-react";
+import { Home, Trash } from "lucide-react";
 import { Header } from "../components/layout/Header";
 import { EstatisticasChart } from "@/components/EstatisticaChart";
 
@@ -7,11 +7,11 @@ export function OverviewPage() {
     <div className="flex flex-col h-full">
       <Header title="Overview" icon={<Home className="w-6 h-6" />} />
 
-      <div className="flex-1 p-6 overflow-y-auto">
-        <div className="border p-6 rounded-sm bg-[#131316] border-border">
+      <div className="flex-1 p-6 overflow-y-auto ">
+        <div className="p-6 rounded-sm bg-[#131316] ">
           {/* Tabs */}
-          <div className="flex flex-row w-full justify-between">
-            <div className="flex gap-[10px] mb-8">
+          <div className="flex flex-row w-full h-[43px] justify-between ">
+            <div className="flex gap-2.5 mb-8">
               <button className="w-[118px] h-[43px] px-[22px] py-3 bg-white text-black rounded font-bold text-[16px] leading-[100%] tracking-[0%]">
                 PRISÕES
               </button>
@@ -22,10 +22,11 @@ export function OverviewPage() {
                 BOLETINS
               </button>
             </div>
-            <button className="size-[42px] bg-[#FF204E] rounded-[5px] cursor-pointer hover:bg-[#e61b45] transition-colors flex items-center justify-center">
+            {/* <button className="size-[42px] bg-[#FF204E] rounded-[5px] cursor-pointer hover:bg-[#e61b45] transition-colors flex items-center justify-center">
               <CirclePlus className="size-5 text-white mx-auto" />
-            </button>
+            </button> */}
           </div>
+          {/* <hr className="border-b py-2" /> */}
 
           {/* Chart Placeholder */}
           <div className="py-3">
@@ -35,7 +36,7 @@ export function OverviewPage() {
           {/* Eventos Recentes */}
           <div className="space-y-4">
             <h2 className="text-lg font-semibold">Eventos Recentes</h2>
-            {[1, 2, 3, 4, 5, 6].map((i) => (
+            {[1, 2, 3].map((i) => (
               <div
                 key={i}
                 className="flex items-center justify-between bg-card rounded-lg p-4"

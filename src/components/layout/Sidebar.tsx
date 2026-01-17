@@ -8,6 +8,8 @@ import {
   X,
   Paperclip,
   CarFront,
+  FolderCog,
+  Star,
 } from "lucide-react";
 import type { PageType } from "@/types";
 
@@ -22,7 +24,7 @@ const menuItems: { icon: typeof Home; page: PageType; label: string }[] = [
   { icon: Search, page: "consultar", label: "Consultar" },
   { icon: Paperclip, page: "prisao", label: "Prisão" },
   { icon: CarFront, page: "multar", label: "Multar" },
-  { icon: Users, page: "procurados", label: "Procurados" },
+  { icon: Star, page: "procurados", label: "Procurados" },
   { icon: FileWarning, page: "boletim", label: "Boletim de Ocorrência" },
   { icon: Shield, page: "gerenciamento", label: "Gerenciamento" },
   { icon: Trophy, page: "ranking", label: "Ranking" },
